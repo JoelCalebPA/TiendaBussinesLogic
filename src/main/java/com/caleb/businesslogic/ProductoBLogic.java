@@ -14,6 +14,9 @@ public class ProductoBLogic {
 	public void Registrar(Producto producto) {
 		dao.registrarProducto(producto);
 	}
+	public Producto buscarProducto(int id_producto) {
+		return dao.buscarProducto(id_producto);
+	}
 	public List<Producto> Listar() {
 		return dao.listarProductos();
 	}
